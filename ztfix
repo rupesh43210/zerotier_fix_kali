@@ -2,6 +2,8 @@
 
 
 
+
+
 #chcek is a user is root
 checksudo(){
             if [[ $EUID -ne 0 ]]; then
@@ -10,6 +12,10 @@ checksudo(){
            exit 1
         fi
  }
+
+
+
+sudo rm -r /var/lib/zerotier-one
 
 
 # install libssl1.1
